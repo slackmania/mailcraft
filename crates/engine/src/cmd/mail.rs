@@ -79,6 +79,10 @@ pub fn specs() -> Vec<CommandSpec> {
             .pure()
             .params(r#"{"id"?: number} (a message; default: the selected one). An `id` or `ids` that names nothing (null, text, 0, a fraction) is refused"#)
             .selection(needs_message),
+        CommandSpec::new("mail.filterBySender", "Filter by Sender", "Home › Find", filter_by_sender)
+            .pure()
+            .params(r#"{"id"?: number} (a message; default: the selected one). Narrows the list that is in view to the mail of that message's sender: a `from:` search for its address, in the scope the list already has. An `id` or `ids` that names nothing (null, text, 0, a fraction) is refused"#)
+            .selection(needs_message),
         CommandSpec::new("mail.openAttachment", "Open Attachment", "Attachments › Actions", open_attachment)
             .pure()
             .params(
@@ -958,6 +962,29 @@ fn find_from_sender(s: &mut Session, v: &Value) -> CmdResult {
     }
     s.view.search = search;
     s.view.scope = crate::Scope::Everywhere;
+    Ok(json!({"search": s.view.search, "found": listed(&s.rows())}))
+}
+
+/// Narrow the list in view to the mail of a message's sender (the one in focus, or `id`): the
+/// same `from:` search as [`find_from_sender`], but the scope the list already has, so a folder
+/// stays that folder and a search its own field (#301). A right click on a sender's name offers
+/// it beside Copy.
+fn filter_by_sender(s: &mut Session, v: &Value) -> CmdResult {
+    use mailcraft_model::search::{Query, is_address, keyword_value};
+    let id = p::message_strict(v)?.or(s.sel.focus()).ok_or_else(|| fail("select a message first"))?;
+    let m = s.mailbox.message(id).ok_or_else(|| failed!("no message with id {id}", id))?;
+    let address = m.from.email.trim();
+    if address.is_empty() {
+        return Err(fail("this message has no sender address to filter by"));
+    }
+    let search = format!("from:{}", keyword_value(address));
+    // What is written is read back as that one address, or not written at all: an address the
+    // search doesn't take as a whole one (`ada@[192.0.2.1]`) is said to be one.
+    let query = Query::parse(&search);
+    if !is_address(address) || query.len() != 1 || !query.is_address_term(0) || !query.matches(m, 0) {
+        return Err(fail("the search can't look for this sender's address as a whole address"));
+    }
+    s.view.search = search;
     Ok(json!({"search": s.view.search, "found": listed(&s.rows())}))
 }
 

@@ -1,0 +1,1 @@
+- **Magyar felület.** A MailCraft felülete mostantól magyarul is elérhető előnézeti nyelvként (Fájl › Beállítások › Nyelv). A fordítás gépi vázlat, amelyet még anyanyelvi lektor nem ellenőrzött; a hiányzó szövegek angolul jelennek meg.

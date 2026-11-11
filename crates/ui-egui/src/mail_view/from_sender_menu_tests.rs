@@ -8,6 +8,26 @@ use serde_json::json;
 
 use crate::people_view::testing;
 
+/// A right click on the sender's name in the reading pane offers Filter by Sender, which narrows
+/// the list in view to that sender's mail.
+#[test]
+fn right_clicking_the_sender_name_filters_by_that_sender() {
+    let mut w = testing::window("view.mail");
+    w.state_mut().execute("ui.dismissReminder", json!({"all": true})).unwrap();
+    w.run_steps(3);
+    let id = w.state_mut().session.rows().first().map(|r| r.id).unwrap();
+    w.state_mut().execute("mail.select", json!({"id": id})).unwrap();
+    w.run_steps(3);
+    let sender = w.state().session.mailbox.message(id).map(|m| m.from.email.trim().to_string()).unwrap();
+    let at = w.state().hit.rect("readingSender", id).expect("the sender's name in the reading pane").center();
+    testing::click(&mut w, at, PointerButton::Secondary, 1);
+    w.get_by_label_contains("Filter by Sender").click();
+    w.run_steps(3);
+    let want = format!("from:{}", mailcraft_model::search::keyword_value(&sender));
+    assert_eq!(w.state().session.view.search, want);
+    assert_eq!(w.state().session.view.scope, mailcraft_engine::Scope::Folder);
+}
+
 /// Two messages of two senders selected, the other one in focus: a right click on the first and
 /// Messages from Sender look for the first's sender, not the focused one's.
 #[test]

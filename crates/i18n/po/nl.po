@@ -4555,6 +4555,11 @@ msgstr "E-mail filteren"
 msgid "Filter Tasks"
 msgstr "Taken filteren"
 
+#. command label, interface
+#: crates/engine/src/cmd/mail.rs crates/ui-egui/src/mail_view.rs crates/ui-egui/src/reading/select.rs
+msgid "Filter by Sender"
+msgstr ""
+
 #. command label, interface, ribbon, ribbon location
 #: crates/engine/src/cmd/calendar/share.rs crates/engine/src/cmd/edit.rs crates/engine/src/cmd/mail.rs crates/engine/src/cmd/people.rs crates/engine/src/cmd/view.rs crates/ui-egui/src/dialogs.rs crates/ui-egui/src/ribbon.rs
 #, fuzzy
@@ -18840,6 +18845,11 @@ msgstr "dit bericht heeft al zoveel bijlagen als het kan bevatten"
 #, fuzzy
 msgid "this message has had as many pictures as it can"
 msgstr "dit bericht heeft zoveel afbeeldingen als het kan bevatten"
+
+#. what a command says
+#: crates/engine/src/cmd/mail.rs
+msgid "this message has no sender address to filter by"
+msgstr ""
 
 #. what a command says
 #: crates/engine/src/cmd/mail.rs

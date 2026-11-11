@@ -35,6 +35,8 @@ mod ews_up;
 #[cfg(test)]
 mod favorites_tests;
 pub mod file;
+#[cfg(test)]
+mod filter_by_sender_tests;
 pub mod folder;
 #[cfg(test)]
 mod folder_properties_tests;

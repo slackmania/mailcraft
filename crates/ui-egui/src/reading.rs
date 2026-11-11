@@ -506,10 +506,15 @@ fn header(app: &mut MailApp, ui: &mut Ui, m: &Arc<Message>, place: Place, pictur
                     let looks_like_address = mailcraft_model::confusables::as_seen(&m.from.name, 1_000).contains('@');
                     let name =
                         egui::RichText::new(name_text.to_string()).font(semibold(13.0)).color(if looks_like_address { t.orange } else { t.text });
-                    ui.scope(|ui| {
-                        ui.set_max_width(name_w);
-                        fields.add(ui, select::Field::Sender, egui::Label::new(name).truncate());
-                    });
+                    let resp = ui
+                        .scope(|ui| {
+                            ui.set_max_width(name_w);
+                            fields.add(ui, select::Field::Sender, egui::Label::new(name).truncate())
+                        })
+                        .inner;
+                    if place == Place::Pane {
+                        app.hit.add("readingSender", m.id, resp.rect);
+                    }
                     if !m.from.name.is_empty() {
                         let address = egui::RichText::new(address_text).font(regular(11.5)).color(t.text_dim);
                         ui.scope(|ui| {

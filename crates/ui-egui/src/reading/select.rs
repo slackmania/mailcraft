@@ -453,12 +453,13 @@ pub(super) struct Fields {
 
 impl Fields {
     /// Lay `label` out where a label goes, as the text of `field`. It is not painted yet.
-    pub(super) fn add(&mut self, ui: &mut Ui, field: Field, label: egui::Label) {
+    pub(super) fn add(&mut self, ui: &mut Ui, field: Field, label: egui::Label) -> Response {
         let (pos, galley, response) = label.selectable(false).sense(sense(ui)).layout_in_ui(ui);
         response.widget_info(|| egui::WidgetInfo::labeled(egui::Role::Label, ui.is_enabled(), galley.text()));
         // What is cut short is shown whole when the pointer rests on it.
         let response = if galley.elided { response.on_hover_text(galley.text().to_string()) } else { response };
-        self.shown.push(Shown { field, pos, galley, response });
+        self.shown.push(Shown { field, pos, galley, response: response.clone() });
+        response
     }
 }
 
@@ -1005,7 +1006,9 @@ pub(super) fn header(app: &mut MailApp, ui: &Ui, place: Place, mut fields: Field
         && !egui::Popup::is_any_open(ui.ctx());
     let mut selected = None;
     let mut dragging = false;
+    let mut message = 0;
     if let Some(state) = app.text_selection.state(place) {
+        message = state.message;
         let header: Vec<HeaderField> = shown.iter().map(|field| HeaderField { galley: field.galley.clone(), join: field.field.join() }).collect();
         if pressed_elsewhere {
             (state.selection, state.dragging) = (None, None);
@@ -1039,6 +1042,11 @@ pub(super) fn header(app: &mut MailApp, ui: &Ui, place: Place, mut fields: Field
             ui.ctx().set_cursor_icon(egui::CursorIcon::Text);
         }
         field.response.context_menu(|ui| {
+            // A right click on who sent it offers to filter the list to that sender, beside Copy.
+            if message != 0 && matches!(field.field, Field::Sender | Field::Address) {
+                crate::widgets::mi(ui, app, "Filter by Sender", "mail.filterBySender", json!({"id": message}));
+                ui.separator();
+            }
             if let Some(chosen) = menu(ui, selected.is_some(), false, None) {
                 action = Some(chosen);
             }

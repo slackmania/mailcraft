@@ -1,0 +1,1 @@
+- **Filter by Sender.** Right-click the sender's name in the reading pane, or a message in the list, and choose Filter by Sender to narrow the list in view to that sender's mail. It is a `from:` search for the sender's address, in the folder or search that is already in view, and the search box shows it so it can be narrowed further or cleared.
