@@ -363,7 +363,7 @@ fn list(app: &mut MailApp, ui: &mut Ui, lists: &Lists) {
     let names = lists.names.clone();
     let label = move |h: Heading| match h {
         Heading::Due(bucket) => tl!(bucket.label()).to_string(),
-        Heading::Category(i) => names.get(i as usize).map_or_else(String::new, |n| one_line(n, 200)),
+        Heading::Category(i) => names.get(i as usize).map_or_else(String::new, |n| crate::widgets::category_shown(n).to_string()),
         Heading::NoCategory => tl!("No category").to_string(),
     };
     show_rows(ui, &lists.layout, reveal, label, |ui, id, copy, rect| task_row(app, ui, id, copy, rect, today, labelled));

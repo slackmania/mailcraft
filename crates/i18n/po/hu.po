@@ -208,6 +208,12 @@ msgid ".pst file ({format})"
 msgstr ".pst fájl ({format})"
 
 #. interface
+#: crates/ui-egui/src/ribbon.rs
+#, fuzzy
+msgid "1 Line"
+msgstr "1 sor"
+
+#. interface
 #: crates/ui-egui/src/reminders.rs
 #, fuzzy
 msgid "1 day"
@@ -243,6 +249,12 @@ msgstr "10 év"
 msgid "12 months"
 msgstr "12 hónap"
 
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+#, fuzzy
+msgid "2 Lines"
+msgstr "2 sor"
+
 #. interface, name
 #: crates/model/src/offline.rs crates/ui-egui/src/keep_offline.rs
 #, fuzzy
@@ -254,6 +266,12 @@ msgstr "2 hét"
 #, fuzzy
 msgid "2 years"
 msgstr "2 év"
+
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+#, fuzzy
+msgid "3 Lines"
+msgstr "3 sor"
 
 #. interface, name
 #: crates/model/src/offline.rs crates/ui-egui/src/keep_offline.rs
@@ -1982,6 +2000,12 @@ msgid "Blue"
 msgstr "Kék"
 
 #. interface
+#: crates/ui-egui/src/widgets.rs
+#, fuzzy
+msgid "Blue category"
+msgstr "Kék kategória"
+
+#. interface
 #: crates/ui-egui/src/advanced_search.rs
 #, fuzzy
 msgid "Body"
@@ -2004,6 +2028,12 @@ msgstr "Félkövér"
 #, fuzzy
 msgid "Bookmark"
 msgstr "Könyvjelző"
+
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+#, fuzzy
+msgid "Bottom"
+msgstr "Alul"
 
 #. command label
 #: crates/engine/src/cmd/calendar_settings.rs
@@ -5396,6 +5426,12 @@ msgid "Gravatar is asked for the sender's picture and told a hash of their addre
 msgstr "A Gravatartól elkérik a feladó képét, és kivonatolva a címüket; egyébként a favicon.im-től, majd a Google-tól meg kell adni a webhelyük ikonját, és közölni kell a feladó domainjét. Ez megmondja azoknak a szolgáltatásoknak, amelyek képeit nézi. Csak azoknak az embereknek, akiket ismer (az Ön névjegyei és bárki, akinek írt), és azoknak az e-maileknek, amelyeknek a képeit letölti, levélszemét esetén soha, és a feladó képe csak akkor, ha a levelezőszerver megerősíti, hogy a levél tőlük származik."
 
 #. interface
+#: crates/ui-egui/src/widgets.rs
+#, fuzzy
+msgid "Green category"
+msgstr "Zöld kategória"
+
+#. interface
 #: crates/ui-egui/src/merge_contacts.rs
 #, fuzzy
 msgid "Group {n} of {total}"
@@ -6631,7 +6667,7 @@ msgstr "Tudassa az emberekkel, hogy távol van, vagy egy ideig nem tud válaszol
 #: crates/ui-egui/src/theme.rs
 #, fuzzy
 msgid "Light"
-msgstr "Fény"
+msgstr "Világos"
 
 #. interface
 #: crates/ui-egui/src/meeting_dialogs/share.rs
@@ -8729,6 +8765,12 @@ msgstr "okt."
 msgid "October"
 msgstr "október"
 
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+#, fuzzy
+msgid "Off"
+msgstr "Ki"
+
 #. name
 #: crates/time/src/lib.rs
 #, fuzzy
@@ -9224,6 +9266,12 @@ msgstr "Beállítások"
 #, fuzzy
 msgid "Or is it one of these?"
 msgstr "Vagy ez egy ezek közül?"
+
+#. interface
+#: crates/ui-egui/src/widgets.rs
+#, fuzzy
+msgid "Orange category"
+msgstr "Narancssárga kategória"
 
 #. interface
 #: crates/ui-egui/src/reading/invitation.rs
@@ -9840,6 +9888,12 @@ msgid "Public keys of other people"
 msgstr "Más emberek nyilvános kulcsai"
 
 #. interface
+#: crates/ui-egui/src/widgets.rs
+#, fuzzy
+msgid "Purple category"
+msgstr "Lila kategória"
+
+#. interface
 #: crates/ui-egui/src/import_pst.rs
 #, fuzzy
 msgid "Put the calendar items"
@@ -10044,6 +10098,12 @@ msgstr "Ha bejelentkezése lejárt vagy visszavonták, lépjen kapcsolatba újra
 #, fuzzy
 msgid "Recurrence"
 msgstr "Ismétlődés"
+
+#. interface
+#: crates/ui-egui/src/widgets.rs
+#, fuzzy
+msgid "Red category"
+msgstr "Piros kategória"
 
 #. command label, name
 #: crates/engine/src/cmd/edit.rs crates/ui-egui/src/menubar.rs
@@ -10616,6 +10676,12 @@ msgstr "Gazdag szöveg"
 #, fuzzy
 msgid "Rich text"
 msgstr "Gazdag szöveg"
+
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+#, fuzzy
+msgid "Right"
+msgstr "Jobbra"
 
 #. interface
 #: crates/ui-egui/src/reading/invitation.rs
@@ -16256,6 +16322,12 @@ msgstr "Jehu"
 #, fuzzy
 msgid "Yahoo Mail"
 msgstr "Yahoo Mail"
+
+#. interface
+#: crates/ui-egui/src/widgets.rs
+#, fuzzy
+msgid "Yellow category"
+msgstr "Sárga kategória"
 
 #. interface
 #: crates/ui-egui/src/advanced_search.rs crates/ui-egui/src/updates.rs

@@ -307,9 +307,25 @@ pub fn avatar(ui: &Ui, center: egui::Pos2, radius: f32, address: &mailcraft_mode
     );
 }
 
+/// A category's name as the window shows it: the six categories a new mailbox starts with are
+/// our own, so they are shown in the interface language; every other name is the owner's and is
+/// drawn as it is spelt. What a command is given is always the stored name, never this.
+pub fn category_shown(name: &str) -> &str {
+    match name {
+        "Red category" => tl!("Red category"),
+        "Orange category" => tl!("Orange category"),
+        "Yellow category" => tl!("Yellow category"),
+        "Green category" => tl!("Green category"),
+        "Blue category" => tl!("Blue category"),
+        "Purple category" => tl!("Purple category"),
+        _ => name,
+    }
+}
+
 /// A category as a small coloured chip with its name. Returns the width used.
 pub fn category_chip(ui: &Ui, left_center: egui::Pos2, name: &str, color: Color32) -> f32 {
     let t = Tokens::get(ui.ctx());
+    let name = category_shown(name);
     let w = text_w(ui, name, 10.5) + 12.0;
     let r = Rect::from_min_size(pos2(left_center.x, left_center.y - 8.0), vec2(w, 16.0));
     ui.painter().rect_filled(r, 8.0, t.data_fill(color));

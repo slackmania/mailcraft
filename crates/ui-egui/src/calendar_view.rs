@@ -2070,7 +2070,7 @@ fn tooltip(ui: &mut Ui, item: &Item, twelve: bool, own: Option<&str>) {
         line(ui, &rule.describe(ev.start.date));
     }
     if !ev.categories.is_empty() {
-        let names: Vec<&str> = ev.categories.iter().take(6).map(|c| clip_text(c, 60)).collect();
+        let names: Vec<&str> = ev.categories.iter().take(6).map(|c| clip_text(crate::widgets::category_shown(c), 60)).collect();
         line(ui, &names.join(", "));
     }
     let mut state: Vec<&str> = Vec::new();

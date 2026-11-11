@@ -1254,7 +1254,7 @@ pub fn category_menu(
             if on {
                 ui.painter().text(r.center(), Align2::CENTER_CENTER, "✓", medium(10.0), Tokens::get(ui.ctx()).on_swatch);
             }
-            if ui.add(egui::Button::new(name.as_str()).selected(on).min_size(vec2(170.0, 0.0))).clicked() {
+            if ui.add(egui::Button::new(crate::widgets::category_shown(&name)).selected(on).min_size(vec2(170.0, 0.0))).clicked() {
                 let _ = app.run(command, json!({"category": name}));
                 ui.close();
             }
@@ -1469,9 +1469,9 @@ fn menu_contents(ui: &mut Ui, app: &mut MailApp, menu: Menu) {
         }
         Menu::ReadingPane => {
             let cur = app.session.view.reading_pane;
-            for (label, code, pane) in [("Right", "right", Pane::Right), ("Bottom", "bottom", Pane::Bottom), ("Off", "off", Pane::Off)] {
-                mi_check(ui, app, label, cur == pane, "view.readingPane", json!({"value": code}));
-            }
+            mi_check(ui, app, "Right", cur == Pane::Right, "view.readingPane", json!({"value": "right"}));
+            mi_check(ui, app, "Bottom", cur == Pane::Bottom, "view.readingPane", json!({"value": "bottom"}));
+            mi_check(ui, app, "Off", cur == Pane::Off, "view.readingPane", json!({"value": "off"}));
         }
         Menu::GmailCategories => {
             let tabs = app.session.view.gmail_tabs;
@@ -1480,9 +1480,10 @@ fn menu_contents(ui: &mut Ui, app: &mut MailApp, menu: Menu) {
         }
         Menu::Preview => {
             let lines = app.session.prefs.preview_lines;
-            for (label, n) in [("Off", 0u8), ("1 Line", 1), ("2 Lines", 2), ("3 Lines", 3)] {
-                mi_check(ui, app, label, lines == n, "view.previewLines", json!({"value": n}));
-            }
+            mi_check(ui, app, "Off", lines == 0, "view.previewLines", json!({"value": 0}));
+            mi_check(ui, app, "1 Line", lines == 1, "view.previewLines", json!({"value": 1}));
+            mi_check(ui, app, "2 Lines", lines == 2, "view.previewLines", json!({"value": 2}));
+            mi_check(ui, app, "3 Lines", lines == 3, "view.previewLines", json!({"value": 3}));
             ui.separator();
             let one = app.session.prefs.one_line;
             mi_check(ui, app, "Single Line", one, "view.oneLine", json!({"value": !one}));

@@ -206,11 +206,12 @@ fn tightening(tight: bool, one_line: bool) -> f32 {
 }
 
 /// A group heading of the list in the interface language: the engine's dates (`Today`) are
-/// names the catalogue has, and so is the heading of what is pinned.
-/// The owner's category names are drawn as they are spelt, never through the catalogue.
+/// names the catalogue has, and so is the heading of what is pinned. A category that is one of
+/// the six a new mailbox starts with is shown in the interface language; any other is the
+/// owner's and is drawn as it is spelt.
 fn group_name(group: &str, category: bool) -> &str {
     if category {
-        group
+        crate::widgets::category_shown(group)
     } else if group == "Pinned" {
         tl!("Pinned")
     } else if group == mailcraft_engine::list::NO_CATEGORY {

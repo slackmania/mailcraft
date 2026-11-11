@@ -203,6 +203,11 @@ msgid ".pst file ({format})"
 msgstr ""
 
 #. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "1 Line"
+msgstr ""
+
+#. interface
 #: crates/ui-egui/src/reminders.rs
 #, fuzzy
 msgid "1 day"
@@ -238,6 +243,11 @@ msgstr "10 ans"
 msgid "12 months"
 msgstr "12 mois"
 
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "2 Lines"
+msgstr ""
+
 #. interface, name
 #: crates/model/src/offline.rs crates/ui-egui/src/keep_offline.rs
 #, fuzzy
@@ -249,6 +259,11 @@ msgstr "2 semaines"
 #, fuzzy
 msgid "2 years"
 msgstr "2 ans"
+
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "3 Lines"
+msgstr ""
 
 #. interface, name
 #: crates/model/src/offline.rs crates/ui-egui/src/keep_offline.rs
@@ -1868,6 +1883,11 @@ msgid "Blue"
 msgstr ""
 
 #. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Blue category"
+msgstr ""
+
+#. interface
 #: crates/ui-egui/src/advanced_search.rs
 msgid "Body"
 msgstr ""
@@ -1887,6 +1907,11 @@ msgstr "Gras"
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
 msgid "Bookmark"
+msgstr ""
+
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "Bottom"
 msgstr ""
 
 #. command label
@@ -5085,6 +5110,11 @@ msgid "Gravatar is asked for the sender's picture and told a hash of their addre
 msgstr ""
 
 #. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Green category"
+msgstr ""
+
+#. interface
 #: crates/ui-egui/src/merge_contacts.rs
 msgid "Group {n} of {total}"
 msgstr ""
@@ -8237,6 +8267,11 @@ msgstr "oct."
 msgid "October"
 msgstr "octobre"
 
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "Off"
+msgstr ""
+
 #. name
 #: crates/time/src/lib.rs
 #, fuzzy
@@ -8704,6 +8739,11 @@ msgstr "Options"
 #, fuzzy
 msgid "Or is it one of these?"
 msgstr "Ou s'agit-il de l'un de ceux-ci ?"
+
+#. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Orange category"
+msgstr ""
 
 #. interface
 #: crates/ui-egui/src/reading/invitation.rs
@@ -9282,6 +9322,11 @@ msgid "Public keys of other people"
 msgstr ""
 
 #. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Purple category"
+msgstr ""
+
+#. interface
 #: crates/ui-egui/src/import_pst.rs
 msgid "Put the calendar items"
 msgstr ""
@@ -9468,6 +9513,11 @@ msgstr "Reconnectez-vous à Google si votre autorisation a expiré ou a été r�
 #, fuzzy
 msgid "Recurrence"
 msgstr "Périodicité"
+
+#. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Red category"
+msgstr ""
 
 #. command label, name
 #: crates/engine/src/cmd/edit.rs crates/ui-egui/src/menubar.rs
@@ -10006,6 +10056,11 @@ msgstr ""
 #. interface
 #: crates/ui-egui/src/signatures.rs
 msgid "Rich text"
+msgstr ""
+
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "Right"
 msgstr ""
 
 #. interface
@@ -15262,6 +15317,11 @@ msgstr "Yahoo"
 #, fuzzy
 msgid "Yahoo Mail"
 msgstr "Yahoo Mail"
+
+#. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Yellow category"
+msgstr ""
 
 #. interface
 #: crates/ui-egui/src/advanced_search.rs crates/ui-egui/src/updates.rs

@@ -208,6 +208,11 @@ msgid ".pst file ({format})"
 msgstr ".pst-bestand ({format})"
 
 #. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "1 Line"
+msgstr ""
+
+#. interface
 #: crates/ui-egui/src/reminders.rs
 #, fuzzy
 msgid "1 day"
@@ -243,6 +248,11 @@ msgstr "10 jaar"
 msgid "12 months"
 msgstr "12 maanden"
 
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "2 Lines"
+msgstr ""
+
 #. interface, name
 #: crates/model/src/offline.rs crates/ui-egui/src/keep_offline.rs
 #, fuzzy
@@ -254,6 +264,11 @@ msgstr "2 weken"
 #, fuzzy
 msgid "2 years"
 msgstr "2 jaar"
+
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "3 Lines"
+msgstr ""
 
 #. interface, name
 #: crates/model/src/offline.rs crates/ui-egui/src/keep_offline.rs
@@ -1968,6 +1983,11 @@ msgid "Blue"
 msgstr "Blauw"
 
 #. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Blue category"
+msgstr ""
+
+#. interface
 #: crates/ui-egui/src/advanced_search.rs
 #, fuzzy
 msgid "Body"
@@ -1990,6 +2010,11 @@ msgstr "Vet"
 #, fuzzy
 msgid "Bookmark"
 msgstr "Bladwijzer"
+
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "Bottom"
+msgstr ""
 
 #. command label
 #: crates/engine/src/cmd/calendar_settings.rs
@@ -5352,6 +5377,11 @@ msgid "Gravatar is asked for the sender's picture and told a hash of their addre
 msgstr "Aan Gravatar wordt de afbeelding van de afzender gevraagd, en een hash van diens adres doorgegeven; anders wordt aan favicon.im, en daarna aan Google, het pictogram van diens website gevraagd, en het domein van de afzender doorgegeven. Dit vertelt die diensten van wie u afbeeldingen bekijkt. Alleen voor de personen die u kent (uw contactpersonen, en iedereen aan wie u hebt geschreven) en de e-mail waarvan u afbeeldingen downloadt, nooit voor Ongewenste e-mail, en een afbeelding van een afzender alleen wanneer uw e-mailserver bevestigt dat de e-mail van die afzender is."
 
 #. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Green category"
+msgstr ""
+
+#. interface
 #: crates/ui-egui/src/merge_contacts.rs
 #, fuzzy
 msgid "Group {n} of {total}"
@@ -8648,6 +8678,11 @@ msgstr "okt"
 msgid "October"
 msgstr "oktober"
 
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "Off"
+msgstr ""
+
 #. name
 #: crates/time/src/lib.rs
 #, fuzzy
@@ -9141,6 +9176,11 @@ msgstr "Opties"
 #, fuzzy
 msgid "Or is it one of these?"
 msgstr "Of is het een van deze?"
+
+#. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Orange category"
+msgstr ""
 
 #. interface
 #: crates/ui-egui/src/reading/invitation.rs
@@ -9754,6 +9794,11 @@ msgid "Public keys of other people"
 msgstr ""
 
 #. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Purple category"
+msgstr ""
+
+#. interface
 #: crates/ui-egui/src/import_pst.rs
 msgid "Put the calendar items"
 msgstr ""
@@ -9955,6 +10000,11 @@ msgstr "Verbind opnieuw met Google als uw aanmelding is verlopen of ingetrokken.
 #, fuzzy
 msgid "Recurrence"
 msgstr "Terugkeerpatroon"
+
+#. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Red category"
+msgstr ""
 
 #. command label, name
 #: crates/engine/src/cmd/edit.rs crates/ui-egui/src/menubar.rs
@@ -10521,6 +10571,11 @@ msgstr "Tekst met opmaak"
 #, fuzzy
 msgid "Rich text"
 msgstr "Tekst met opmaak"
+
+#. interface
+#: crates/ui-egui/src/ribbon.rs
+msgid "Right"
+msgstr ""
 
 #. interface
 #: crates/ui-egui/src/reading/invitation.rs
@@ -16097,6 +16152,11 @@ msgstr "Yahoo"
 #, fuzzy
 msgid "Yahoo Mail"
 msgstr "Yahoo Mail"
+
+#. interface
+#: crates/ui-egui/src/widgets.rs
+msgid "Yellow category"
+msgstr ""
 
 #. interface
 #: crates/ui-egui/src/advanced_search.rs crates/ui-egui/src/updates.rs

@@ -108,7 +108,7 @@ fn group_label(group: Group, names: &[String]) -> String {
         Group::Favorites => tl!("Favorites").to_string(),
         Group::Letter(c) => c.to_string(),
         Group::Other => "#".to_string(),
-        Group::Categories(i) => names.get(i as usize).map_or_else(String::new, |n| one_line(n, 200)),
+        Group::Categories(i) => names.get(i as usize).map_or_else(String::new, |n| crate::widgets::category_shown(n).to_string()),
         Group::NoCategory => tl!("No category").to_string(),
     }
 }

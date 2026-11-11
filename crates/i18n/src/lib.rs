@@ -436,6 +436,10 @@ mod tests {
         assert_eq!(Lang::Hungarian.picker_name(), "Magyar (előnézet)");
         assert_eq!(Lang::Hungarian.t("Filter by Sender"), "Feladó szűrése");
         assert_eq!(Lang::Hungarian.t("Messages from Sender"), "Üzenetek a feladótól");
+        assert_eq!(Lang::Hungarian.t("Light"), "Világos");
+        assert_eq!(Lang::Hungarian.t("Dark"), "Sötét");
+        assert_eq!(Lang::Hungarian.t("Blue category"), "Kék kategória");
+        assert_eq!(Lang::Hungarian.t("1 Line"), "1 sor");
         assert_eq!(Lang::Hungarian.folder("Inbox"), "Beérkezett üzenetek");
     }
 

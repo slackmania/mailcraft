@@ -733,7 +733,7 @@ pub(crate) mod kit {
             ui.spacing_mut().item_spacing = vec2(6.0, 6.0);
             for (name, color) in chips {
                 let on = chosen.iter().any(|c| c.eq_ignore_ascii_case(&name));
-                if chip(ui, &name, on, color) {
+                if chip(ui, crate::widgets::category_shown(&name), on, color) {
                     chosen.retain(|c| !c.eq_ignore_ascii_case(&name));
                     if !on {
                         chosen.push(name);
