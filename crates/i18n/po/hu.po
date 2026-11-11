@@ -562,7 +562,7 @@ msgid ""
 "About\n"
 "MailCraft"
 msgstr ""
-"Körülbelül\n"
+"Névjegy\n"
 "MailCraft"
 
 #. interface, name
@@ -657,7 +657,7 @@ msgid ""
 "Settings"
 msgstr ""
 "Fiók\n"
-"Beállítások"
+"beállításai"
 
 #. command label, interface
 #: crates/engine/src/cmd/account.rs crates/ui-egui/src/account_setup.rs
@@ -868,8 +868,8 @@ msgid ""
 "Add to\n"
 "Favorites"
 msgstr ""
-"Hozzáadás\n"
-"Kedvencek"
+"Hozzáadás a\n"
+"kedvencekhez"
 
 #. command label, ribbon
 #: crates/engine/src/cmd/people.rs crates/ui-egui/src/ribbon.rs
@@ -1480,8 +1480,8 @@ msgid ""
 "Arrange\n"
 "By"
 msgstr ""
-"Rendezzen\n"
-"által"
+"Rendezés\n"
+"szerint"
 
 #. command label, ribbon
 #: crates/engine/src/cmd/view.rs crates/ui-egui/src/ribbon.rs
@@ -1658,8 +1658,8 @@ msgid ""
 "Attach\n"
 "File"
 msgstr ""
-"Csatolás\n"
-"Fájl"
+"Fájl\n"
+"csatolása"
 
 #. command label
 #: crates/engine/src/cmd/compose.rs crates/ui-egui/src/lib.rs
@@ -2192,8 +2192,8 @@ msgid ""
 "Cancel\n"
 "All"
 msgstr ""
-"Mégse\n"
-"Mind"
+"Összes\n"
+"mégse"
 
 #. command label
 #: crates/engine/src/cmd/send_receive.rs
@@ -2292,8 +2292,8 @@ msgid ""
 "Change\n"
 "View"
 msgstr ""
-"Változás\n"
-"Megtekintés"
+"Nézet\n"
+"módosítása"
 
 #. command label
 #: crates/engine/src/cmd/auto_replies.rs
@@ -2428,8 +2428,8 @@ msgid ""
 "Check\n"
 "Names"
 msgstr ""
-"Ellenőrizze\n"
-"Nevek"
+"Nevek\n"
+"ellenőrzése"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -2894,7 +2894,7 @@ msgid ""
 "Contact\n"
 "Card"
 msgstr ""
-"Kapcsolatfelvétel\n"
+"Névjegy-\n"
 "kártya"
 
 #. command label, ribbon
@@ -2958,8 +2958,8 @@ msgid ""
 "Copy\n"
 "Diagnostics"
 msgstr ""
-"Másolás\n"
-"Diagnosztika"
+"Diagnosztika\n"
+"másolása"
 
 #. command label, interface
 #: crates/ui-egui/src/chrome.rs crates/ui-egui/src/lib.rs
@@ -3322,8 +3322,8 @@ msgid ""
 "Date &\n"
 "Time"
 msgstr ""
-"dátum és\n"
-"Idő"
+"Dátum és\n"
+"idő"
 
 #. command label
 #: crates/engine/src/cmd/writing_tools.rs
@@ -3434,8 +3434,8 @@ msgid ""
 "Delete\n"
 "Folder"
 msgstr ""
-"Törölje\n"
-"Mappa"
+"Mappa\n"
+"törlése"
 
 #. command label
 #: crates/engine/src/cmd/calendar.rs
@@ -4094,8 +4094,8 @@ msgid ""
 "Edit\n"
 "Contact"
 msgstr ""
-"Szerkesztés\n"
-"Kapcsolatfelvétel"
+"Névjegy\n"
+"szerkesztése"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -4104,8 +4104,8 @@ msgid ""
 "Edit\n"
 "Task"
 msgstr ""
-"Szerkesztés\n"
-"Feladat"
+"Feladat\n"
+"szerkesztése"
 
 #. command label
 #: crates/engine/src/cmd/people.rs
@@ -4175,7 +4175,7 @@ msgid ""
 "Calendar"
 msgstr ""
 "E-mail\n"
-"Naptár"
+"naptár"
 
 #. command label, interface, name
 #: crates/engine/src/cmd/calendar/share.rs crates/ui-egui/src/meeting_dialogs.rs
@@ -4220,8 +4220,8 @@ msgid ""
 "Empty\n"
 "Folder"
 msgstr ""
-"Üres\n"
-"Mappa"
+"Mappa\n"
+"kiürítése"
 
 #. command label, interface
 #: crates/engine/src/cmd/folder.rs crates/ui-egui/src/dialogs.rs
@@ -4434,8 +4434,8 @@ msgid ""
 "Export\n"
 "Contacts"
 msgstr ""
-"Exportálás\n"
-"Kapcsolatok"
+"Névjegyek\n"
+"exportálása"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -4444,8 +4444,8 @@ msgid ""
 "Export\n"
 "Folder"
 msgstr ""
-"Exportálás\n"
-"Mappa"
+"Mappa\n"
+"exportálása"
 
 #. command label, interface
 #: crates/engine/src/cmd/file.rs crates/ui-egui/src/backstage.rs
@@ -4568,8 +4568,8 @@ msgid ""
 "Filter\n"
 "Email"
 msgstr ""
-"Szűrés\n"
-"E-mail"
+"E-mail\n"
+"szűrése"
 
 #. command label, ribbon
 #: crates/engine/src/cmd/view.rs crates/ui-egui/src/ribbon.rs
@@ -4710,8 +4710,8 @@ msgid ""
 "Folder\n"
 "Pane"
 msgstr ""
-"Mappa\n"
-"Panel"
+"Mappa-\n"
+"ablak"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -4721,7 +4721,7 @@ msgid ""
 "Properties"
 msgstr ""
 "Mappa\n"
-"Tulajdonságok"
+"tulajdonságai"
 
 #. command label, ribbon location
 #: crates/engine/src/cmd/account.rs crates/engine/src/cmd/view.rs
@@ -4784,8 +4784,8 @@ msgid ""
 "Follow\n"
 "Up"
 msgstr ""
-"Kövesd\n"
-"Fel"
+"Nyomon\n"
+"követés"
 
 #. command label, ribbon
 #: crates/engine/src/cmd/mail.rs crates/ui-egui/src/ribbon.rs
@@ -4914,8 +4914,8 @@ msgid ""
 "Forward\n"
 "Contact"
 msgstr ""
-"Előre\n"
-"Kapcsolatfelvétel"
+"Névjegy\n"
+"továbbítása"
 
 #. command label
 #: crates/engine/src/cmd/people.rs
@@ -5054,8 +5054,8 @@ msgid ""
 "Get\n"
 "Support"
 msgstr ""
-"Kap\n"
-"Támogatás"
+"Támogatás\n"
+"kérése"
 
 #. command label
 #: crates/engine/src/cmd/people.rs
@@ -7218,8 +7218,8 @@ msgid ""
 "Mark\n"
 "Complete"
 msgstr ""
-"Mark\n"
-"Teljes"
+"Befejezettnek\n"
+"jelölés"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -7228,8 +7228,8 @@ msgid ""
 "Mark All\n"
 "as Read"
 msgstr ""
-"Összes megjelölése\n"
-"mint Olvasás"
+"Összes\n"
+"olvasottnak jelölése"
 
 #. command label
 #: crates/engine/src/cmd/mail.rs
@@ -7322,8 +7322,8 @@ msgid ""
 "Merge\n"
 "Duplicates"
 msgstr ""
-"Egyesítés\n"
-"Ismétlődések"
+"Duplikátumok\n"
+"egyesítése"
 
 #. command label
 #: crates/engine/src/cmd/people_merge.rs
@@ -7365,7 +7365,7 @@ msgid ""
 "Preview"
 msgstr ""
 "Üzenet\n"
-"Előnézet"
+"előnézete"
 
 #. command label, ribbon
 #: crates/engine/src/cmd/view.rs crates/ui-egui/src/ribbon.rs
@@ -7650,8 +7650,8 @@ msgid ""
 "Move\n"
 "Folder"
 msgstr ""
-"Mozgás\n"
-"Mappa"
+"Mappa\n"
+"áthelyezése"
 
 #. command label
 #: crates/engine/src/cmd/account.rs
@@ -7889,7 +7889,7 @@ msgid ""
 "Appointment"
 msgstr ""
 "Új\n"
-"Kinevezés"
+"időpont"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -7899,7 +7899,7 @@ msgid ""
 "Contact"
 msgstr ""
 "Új\n"
-"Kapcsolatfelvétel"
+"névjegy"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -7909,7 +7909,7 @@ msgid ""
 "Email"
 msgstr ""
 "Új\n"
-"E-mail"
+"e-mail"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -7919,7 +7919,7 @@ msgid ""
 "Folder"
 msgstr ""
 "Új\n"
-"Mappa"
+"mappa"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -7929,7 +7929,7 @@ msgid ""
 "Items"
 msgstr ""
 "Új\n"
-"Tételek"
+"elemek"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -7939,7 +7939,7 @@ msgid ""
 "Meeting"
 msgstr ""
 "Új\n"
-"Találkozó"
+"megbeszélés"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -7949,7 +7949,7 @@ msgid ""
 "Task"
 msgstr ""
 "Új\n"
-"Feladat"
+"feladat"
 
 #. interface
 #: crates/ui-egui/src/calendar_view.rs
@@ -8072,8 +8072,8 @@ msgid ""
 "Next 7\n"
 "Days"
 msgstr ""
-"Következő 7\n"
-"Napok"
+"Következő\n"
+"7 nap"
 
 #. command label
 #: crates/engine/src/cmd/calendar_extra.rs
@@ -8982,8 +8982,8 @@ msgid ""
 "Open\n"
 "Calendar"
 msgstr ""
-"Nyissa meg\n"
-"Naptár"
+"Naptár\n"
+"megnyitása"
 
 #. interface, ribbon location
 #: crates/engine/src/cmd/calendar_opened.rs crates/engine/src/cmd/file.rs crates/ui-egui/src/backstage.rs crates/ui-egui/src/lib.rs
@@ -9628,8 +9628,8 @@ msgid ""
 "Plain\n"
 "Text"
 msgstr ""
-"Sima\n"
-"Szöveg"
+"Egyszerű\n"
+"szöveg"
 
 #. command label, ribbon
 #: crates/engine/src/cmd/format.rs crates/ui-egui/src/ribbon.rs
@@ -9668,8 +9668,8 @@ msgid ""
 "Pop\n"
 "Out"
 msgstr ""
-"Pop\n"
-"Ki"
+"Külön\n"
+"ablakban"
 
 #. command label, interface
 #: crates/engine/src/cmd/compose.rs crates/ui-egui/src/compose.rs
@@ -9936,8 +9936,8 @@ msgid ""
 "Reading\n"
 "Pane"
 msgstr ""
-"Olvasás\n"
-"Panel"
+"Olvasó-\n"
+"ablak"
 
 #. command label, ribbon, ribbon location
 #: crates/engine/src/cmd/mail.rs crates/engine/src/cmd/view.rs crates/ui-egui/src/ribbon.rs
@@ -10001,7 +10001,7 @@ msgid ""
 "Searches"
 msgstr ""
 "Legutóbbi\n"
-"Keresések"
+"keresések"
 
 #. command label, ribbon
 #: crates/engine/src/cmd/view/display.rs crates/ui-egui/src/ribbon.rs
@@ -10131,7 +10131,7 @@ msgid ""
 "Window"
 msgstr ""
 "Emlékeztetők\n"
-"Ablak"
+"ablaka"
 
 #. command label
 #: crates/engine/src/cmd/view.rs
@@ -10248,8 +10248,8 @@ msgid ""
 "Remove from\n"
 "Favorites"
 msgstr ""
-"Eltávolítás innen\n"
-"Kedvencek"
+"Eltávolítás a\n"
+"kedvencekből"
 
 #. command label, interface
 #: crates/engine/src/cmd/calendar/invitation.rs crates/ui-egui/src/reading/invitation.rs
@@ -10312,8 +10312,8 @@ msgid ""
 "Rename\n"
 "Folder"
 msgstr ""
-"Átnevezés\n"
-"Mappa"
+"Mappa\n"
+"átnevezése"
 
 #. command label
 #: crates/engine/src/cmd/category.rs
@@ -10389,7 +10389,7 @@ msgid ""
 "All"
 msgstr ""
 "Válasz\n"
-"Mind"
+"mindnek"
 
 #. command label, interface
 #: crates/engine/src/cmd/compose.rs crates/ui-egui/src/mail_view.rs
@@ -10440,8 +10440,8 @@ msgid ""
 "Report a\n"
 "Problem"
 msgstr ""
-"Jelentés a\n"
-"Probléma"
+"Hiba\n"
+"jelentése"
 
 #. command label, interface
 #: crates/ui-egui/src/chrome.rs crates/ui-egui/src/dialogs.rs crates/ui-egui/src/lib.rs
@@ -10480,8 +10480,8 @@ msgid ""
 "Reset\n"
 "View"
 msgstr ""
-"Reset\n"
-"Megtekintés"
+"Nézet\n"
+"visszaállítása"
 
 #. command label
 #: crates/engine/src/cmd/view.rs
@@ -10544,8 +10544,8 @@ msgid ""
 "Reverse\n"
 "Sort"
 msgstr ""
-"Fordítva\n"
-"Rendezés"
+"Rendezés\n"
+"megfordítása"
 
 #. command label, interface
 #: crates/engine/src/cmd/view.rs crates/ui-egui/src/mail_view.rs
@@ -10597,7 +10597,7 @@ msgid ""
 "Layout"
 msgstr ""
 "Szalag\n"
-"Elrendezés"
+"elrendezése"
 
 #. command label, interface, ribbon
 #: crates/ui-egui/src/lib.rs crates/ui-egui/src/ribbon.rs
@@ -10720,8 +10720,8 @@ msgid ""
 "Run Rules\n"
 "Now"
 msgstr ""
-"Futtatási szabályok\n"
-"Most"
+"Szabályok\n"
+"futtatása most"
 
 #. command label, interface
 #: crates/engine/src/cmd/rules.rs crates/ui-egui/src/forms.rs crates/ui-egui/src/ribbon.rs
@@ -10790,8 +10790,8 @@ msgid ""
 "Save\n"
 "Calendar"
 msgstr ""
-"Mentés\n"
-"Naptár"
+"Naptár\n"
+"mentése"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -10800,8 +10800,8 @@ msgid ""
 "Save\n"
 "Draft"
 msgstr ""
-"Mentés\n"
-"Piszkozat"
+"Piszkozat\n"
+"mentése"
 
 #. interface
 #: crates/ui-egui/src/forms.rs
@@ -11082,8 +11082,8 @@ msgid ""
 "Search\n"
 "Calendar"
 msgstr ""
-"Keresés\n"
-"Naptár"
+"Naptár\n"
+"keresése"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -11092,8 +11092,8 @@ msgid ""
 "Search\n"
 "Commands"
 msgstr ""
-"Keresés\n"
-"Parancsok"
+"Parancsok\n"
+"keresése"
 
 #. command label, interface, name
 #: crates/engine/src/cmd/calendar/share.rs crates/ui-egui/src/meeting_dialogs.rs
@@ -11312,8 +11312,8 @@ msgid ""
 "Send Status\n"
 "Report"
 msgstr ""
-"Állapot küldése\n"
-"Jelentés"
+"Állapotjelentés\n"
+"küldése"
 
 #. command label
 #: crates/engine/src/cmd/tasks.rs
@@ -11468,8 +11468,8 @@ msgid ""
 "Send/Receive\n"
 "All Folders"
 msgstr ""
-"Küldés/Fogadás\n"
-"Minden mappa"
+"Küldés/fogadás\n"
+"minden mappában"
 
 #. command label, interface
 #: crates/engine/src/cmd/account.rs crates/ui-egui/src/chrome.rs crates/ui-egui/src/lib.rs
@@ -11756,8 +11756,8 @@ msgid ""
 "Show\n"
 "Progress"
 msgstr ""
-"Megjelenítés\n"
-"Haladás"
+"Folyamat\n"
+"megjelenítése"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -11766,8 +11766,8 @@ msgid ""
 "Show\n"
 "Training"
 msgstr ""
-"Megjelenítés\n"
-"Képzés"
+"Útmutató\n"
+"megjelenítése"
 
 #. command label, interface, ribbon
 #: crates/engine/src/cmd/calendar.rs crates/ui-egui/src/calendar_view.rs crates/ui-egui/src/forms.rs crates/ui-egui/src/ribbon.rs
@@ -11878,8 +11878,8 @@ msgid ""
 "Show as\n"
 "Conversations"
 msgstr ""
-"Megjelenítés mint\n"
-"Beszélgetések"
+"Megjelenítés\n"
+"beszélgetésként"
 
 #. command label, interface
 #: crates/engine/src/cmd/view.rs crates/ui-egui/src/mail_view.rs
@@ -12038,8 +12038,8 @@ msgid ""
 "Side-by-\n"
 "Side"
 msgstr ""
-"egymás mellett-\n"
-"oldal"
+"Egymás\n"
+"mellett"
 
 #. command label
 #: crates/engine/src/cmd/calendar_settings.rs
@@ -12357,7 +12357,7 @@ msgstr "Intelligens kártya {label}"
 #: crates/ui-egui/src/reminders.rs
 #, fuzzy
 msgid "Snooze"
-msgstr "Szundikálás"
+msgstr "Halasztás"
 
 #. command label
 #: crates/ui-egui/src/lib.rs
@@ -15159,7 +15159,7 @@ msgid ""
 "Spacing"
 msgstr ""
 "Szorosabb\n"
-"Térköz"
+"köz"
 
 #. command label
 #: crates/engine/src/cmd/view/display.rs
@@ -15179,9 +15179,7 @@ msgstr "Idő"
 msgid ""
 "Time\n"
 "Scale"
-msgstr ""
-"Idő\n"
-"Skála"
+msgstr "Időskála"
 
 #. command label, ribbon
 #: crates/engine/src/cmd/calendar_extra.rs crates/ui-egui/src/ribbon.rs
@@ -15598,8 +15596,8 @@ msgid ""
 "Unread/\n"
 "Read"
 msgstr ""
-"olvasatlan/\n"
-"Olvassa el"
+"Olvasatlan/\n"
+"Olvasott"
 
 #. command label
 #: crates/engine/src/cmd/mail.rs
@@ -16009,9 +16007,7 @@ msgstr "Amit írtál, az túl hosszú a GitHubra mutató hivatkozáshoz: rövid�
 msgid ""
 "What's\n"
 "New"
-msgstr ""
-"Mi az\n"
-"Új"
+msgstr "Újdonságok"
 
 #. command label
 #: crates/engine/src/cmd/help.rs
@@ -16121,9 +16117,7 @@ msgstr "Enélkül a naptár a Microsoft 365-postafiók munkaidejét használja, 
 msgid ""
 "Word\n"
 "Count"
-msgstr ""
-"Szó\n"
-"Gróf"
+msgstr "Szószám"
 
 #. command label, interface
 #: crates/engine/src/cmd/writing_tools.rs crates/ui-egui/src/dialogs.rs
@@ -16156,8 +16150,8 @@ msgid ""
 "Work\n"
 "Offline"
 msgstr ""
-"Munka\n"
-"Offline"
+"Offline\n"
+"munka"
 
 #. ribbon
 #: crates/ui-egui/src/ribbon.rs
@@ -16165,9 +16159,7 @@ msgstr ""
 msgid ""
 "Work\n"
 "Week"
-msgstr ""
-"Munka\n"
-"hét"
+msgstr "Munkahét"
 
 #. command label
 #: crates/engine/src/cmd/send_receive.rs
@@ -17435,7 +17427,7 @@ msgstr "az {id} üzenet nem tartja meg az eredetit"
 #: crates/ui-egui/src/reminders.rs
 #, fuzzy
 msgid "minutes"
-msgstr "jegyzőkönyv"
+msgstr "perc"
 
 #. why a command can't run
 #: crates/engine/src/cmd/calendar/invitation.rs
@@ -19876,8 +19868,8 @@ msgstr[1] "{n} nyilvános kulcs importálva."
 #, fuzzy
 msgid "{n} Reminder"
 msgid_plural "{n} Reminders"
-msgstr[0] "{n} Emlékeztető"
-msgstr[1] "{n} Emlékeztetők"
+msgstr[0] "{n} emlékeztető"
+msgstr[1] "{n} emlékeztető"
 
 #. interface
 #: crates/ui-egui/src/meeting_dialogs/share.rs
